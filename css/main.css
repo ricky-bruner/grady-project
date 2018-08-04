@@ -1,6 +1,26 @@
 body {
-    /* background-color: black;
-    color: white; */
+    background: linear-gradient(-45deg, rgb(112, 26, 0), 
+    rgb(136, 19, 64), 
+    rgb(0, 71, 97), 
+    rgb(56, 213, 35));
+	background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+header {
+    height: 500px;
 }
 
 .quarter-info {

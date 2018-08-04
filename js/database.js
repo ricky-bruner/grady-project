@@ -1,3 +1,5 @@
+"use strict";
+
 console.log("im here!");
 
 const stateQuarters = [
@@ -57,3 +59,5 @@ const stateQuarters = [
         year: "2008",
     }
 ]
+
+module.exports = stateQuarters;

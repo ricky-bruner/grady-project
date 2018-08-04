@@ -1,13 +1,7 @@
 "use strict";
 
 
-// const body = document.querySelector("body");
-// const script = document.querySelector("script");
-
-// const header = document.createElement("header");
-// const main = document.createElement("main");
-// const footer = document.createElement("footer");
-
+// universal functions for grabbing elements from the DOM and making new elements
 function grabElement(identifier){
     let element = document.querySelector(identifier);
     return element;
@@ -18,7 +12,8 @@ function makeElement(element){
     return newElement;
 }
 
-
+// BIG function that grabs the body and script and makes a header, main, and footer, then inserts them into the body.
+// calls make containers function at the end
 function buildDOM(){
     const body = grabElement("body");
     const script = grabElement("script");
@@ -31,6 +26,7 @@ function buildDOM(){
     makeContainers();
 }
 
+// grabs the main and inserts three divs into it, each with their own class
 function makeContainers(){
     const mainContent = grabElement("main");
     const familyContainer = makeElement("div");
